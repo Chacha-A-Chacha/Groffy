@@ -1,2 +1,2 @@
 # Groffy
-Portfolio project for alx-se program
+Portfolio project for alx-se program.
