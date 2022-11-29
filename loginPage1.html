@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Groffy Food Delivery</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'><link rel="stylesheet" href="./loginPage.css">
+  <link rel="stylesheet" href="menu.html">
+  <link rel="stylesheet" href="signupPage1.html">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+	<header>
+		<div class="logo">Groffy foodie
+		</div>
+
+		<nav>
+			<ul>
+				<li><a href="loginPage1.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+
+		<div class="button">
+			<a href="signupPage1.html" class="btn btn-1">Log in</a>
+		</div>
+	</header>
+	<div class="contain">
+		<!-- Slider main container -->
+<div class="swiper">
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper">
+	  <!-- Slides -->
+	  <div class="swiper-slide"><img src="image/burger1.jpg"></div>
+	  <div class="swiper-slide"><img src="image/burger1.jpg"></div>
+	  <div class="swiper-slide"><img src="image/grilled.webp"></div>
+
+	  ...
+	</div>
+	<!-- If we need pagination -->
+	<div class="swiper-pagination"></div>
+  
+	<!-- If we need navigation buttons -->
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+  
+  </div>
+  
+
+	</div>
+                
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper', {
+			autoplay:{
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+
+	loop: true,
+
+	pagination: {
+		el: '.swiper-pagination',
+		
+	},
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	});
+	</script>
+</body>
+</html>
