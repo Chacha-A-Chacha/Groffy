@@ -4,7 +4,7 @@ Note : Make sure you have Python version 3.8+
 
 Environment Setup
 
-`$ git clone https://github.com/Akash1362000/News-Web-App.git`
+`$ git clone https://github.com/Chacha-A-Chacha/GroffyNews_App`
 
 `$ cd News-Web-App/`
 
