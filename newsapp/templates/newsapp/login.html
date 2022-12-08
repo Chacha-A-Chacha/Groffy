@@ -1,0 +1,42 @@
+{% extends 'newsapp/base.html' %}
+{% load static %}
+{% load materializecss %}
+{% load crispy_forms_tags %}
+
+<!-- Head -->
+{% block head %}
+<title>GroffyNews - Login</title>
+{% endblock %}
+
+
+<!-- Body -->
+{% block body %}
+<style>.bg-gra-03 {
+    background: -webkit-gradient(linear, left bottom, right top, from(#08aeea), to(#0fee34));
+    background: -webkit-linear-gradient(bottom left, #08aeea 0%, #0fee34 100%);
+    background: -moz-linear-gradient(bottom left, #08aeea 0%, #0fee34 100%);
+    background: -o-linear-gradient(bottom left, #08aeea 0%, #0fee34 100%);
+    background: linear-gradient(to top right, #08aeea 0%, #0fee34 100%);
+  }
+  .white1{
+      background-color: rgb(211, 210, 210);
+      border-radius: 2%;
+  }
+  </style>
+  <body class="bg-gra-03"><br><br>
+    <div class="container row white1 hoverable">
+        <form action="" method="post" class="col s12">
+            {% csrf_token %}
+            <fieldset>
+                <legend><h4>Join Today</h4></legend>
+                {{ form|materializecss }}
+                <br>
+                <button class="btn waves-effect waves-light green" type="submit" name="action" style="margin-left: 10px; margin-bottom:15px">Login
+                    <i class="material-icons right">send</i>
+                </button>
+                <small style="margin-left:15px;">New here ? <a href="{% url 'register' %}">Sign up</a></small>
+            </fieldset><br>
+        </form>
+    </div><br>
+</body>
+{% endblock body %}
