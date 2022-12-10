@@ -1,6 +1,5 @@
 
 # Development 🛠
-Note : Make sure you have Python version 3.8+
 
 Environment Setup
 
@@ -8,19 +7,33 @@ Environment Setup
 
 `$ cd News-Web-App/`
 
-If virtualenv is not installed [(What is virtualenv?)](https://www.youtube.com/watch?v=N5vscPTWKOk&t=313s):
+### Why use virtualenv?
+We use virtualenv to create an isolated environment for your Python project. 
+This means that each project can have its own dependencies regardless of what dependencies every other project has.
+
+First, run this command on your command prompt or terminal:
 
 `$ pip install virtualenv`
 
-Create a virtual environment
+Second, do the following:
 
-`$ virtualenv venv`
+`$ virtualenv “name of virtual environment”`
 
-Activate the environment everytime you open the project
+### Activating the virtual environment
 
-`$ source venv/Scripts/activate`
+Now go to your terminal or command prompt. Go to the directory that contains the file called activate. 
+The file called activate is found inside a folder called Scripts for Windows and bin for OS X and Linux.Activate the environment everytime you open the project
+
+For OS X and Linux Environment:
+`$ source /home/GroffyNews_App/“name of virtual environment”/bin/activate`
+
+    The git checkout command lets you navigate between the branches created by git branch . 
+    Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch
 
 `$ git checkout dev`
+
+For Windows Environment:
+`“name of virtual environment”\Scripts\activate`
 
 Install requirements
 
@@ -37,31 +50,4 @@ Open your desired browser and head over to [http://127.0.0.1:8000/](http://127.0
 To exit the environment
 
 `$ deactivate `
-
-### License ✍
-
-```
-MIT License
-
-Copyright (c) 2020 Akash Shrivastava
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
 
